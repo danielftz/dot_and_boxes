@@ -1,0 +1,9 @@
+global.current_player = 0;//blue go first
+global.played = false;
+global.vLine = ds_map_create();
+global.vIdx = 0;
+global.hLine = ds_map_create();
+global.hIdx = 0;
+global.Box = ds_map_create();
+global.bIdx = 0
+global.line_played = [];
