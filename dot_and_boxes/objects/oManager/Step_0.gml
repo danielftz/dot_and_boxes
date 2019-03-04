@@ -5,7 +5,7 @@ if (global.played){
 	if (global.line_played[0]){//horizontal line played
 		//check if horizontal line is a border line
 		
-		if (global.line_played[1]<4){//top border
+		if (global.line_played[1]<size){//top border
 			box_hit = global.line_played[1];
 			if (check_hit(box_hit,size)) overall_hit = true;
 		}
