@@ -7,4 +7,7 @@ First version with playable local pvp and no solver.
 Possible solver: Alphabeta Negamax, Monte Carlos. 
 Future versions should take user input as argument to set up the size of the game board. 
 
+Match 4th: 
+FIxed a bug. 
+
 -------------------------------------------------------------------------------------

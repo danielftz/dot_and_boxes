@@ -103,6 +103,14 @@
             }
         },
         {
+            "Key": "31843fc9-8251-4580-a4d4-2c1348d33f19",
+            "Value": {
+                "id": "306e251d-b211-4a89-ab18-c58db763d87b",
+                "resourcePath": "objects\\oLines\\oLines.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "4ab8619a-4740-4023-88a2-75b20b301f0e",
             "Value": {
                 "id": "b3a54f34-0f3a-491a-ad0f-f22a52a40a2c",
