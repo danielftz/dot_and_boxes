@@ -11,3 +11,6 @@ else if (txt == "back"){
 else if (txt == "restart"){
 	room_restart();
 }
+else if (txt == "start"){
+	room_goto(rGameMxN);
+}

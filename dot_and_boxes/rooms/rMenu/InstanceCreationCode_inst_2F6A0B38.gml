@@ -1,1 +1,1 @@
-txt = "8 x 8";
+txt = "start";
