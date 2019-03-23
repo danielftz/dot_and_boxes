@@ -61,6 +61,12 @@ for (i=0;i<global.n;i++){
 		box_idx.image_yscale = oManager_v2.v_gap/64;
 		//update grid
 		global.Box[# i,j] = box_idx;
+		//******please fill in here*******//
+		//match vLine and hLine to each oBox
+		//update them in oLine and oBox 
+		//update oLine.affiliated_box(a list)
+		//update oBox.line_left,oBoxl.line_right,etc. 
+		
 	}
 }
 
