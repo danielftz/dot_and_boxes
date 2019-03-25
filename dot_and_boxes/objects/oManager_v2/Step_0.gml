@@ -1,17 +1,28 @@
 if (global.played){
 	//if a line is played
+	var player_scored = false;
 	var played_line = global.line_played;
 	for (i=0;i<ds_list_size(played_line.affiliated_box);i++){
 		var connected_box = played_line.affiliated_box[| i];
 		if (check_box(connected_box)){
 			with(connected_box) event_user(0);
-			
+			score_box();
+			player_scored = true
 		}
 	}
-	global.current_player = abs(1-global.current_player);
+	if !player_scored{
+		global.current_player = abs(1-global.current_player);
+	}
+	//player_scored = false;
 	global.played = false;
 	
+	//random_play();
+	if !(player_scored){
+		random_play();
+	}
 }
+
+
 
 //if (global.played){
 //	//when a line is played:

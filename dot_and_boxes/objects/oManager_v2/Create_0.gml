@@ -83,21 +83,21 @@ for (i=0;i<global.n;i++){
 		global.Box[# i,j] = box_idx;
 		//******please fill in here*******//
 		//match vLine and hLine to each oBox
-		var key = i*global.m+j
+		var key = j*global.n+i
 		box_idx.line_left = global.vLine[? key] 
 		link_boxes_to_lines (box_idx,global.vLine[? key])
 		//
-		key = i*global.m+ j + global.m;
+		key = j*global.n+ i + global.n;
 		box_idx.line_right = global.vLine[? key]
 		link_boxes_to_lines (box_idx,global.vLine[? key])
 		//
-		key = j*global.n + i;
+		key = i*global.m + j;
 		box_idx.line_up = global.hLine[? key]
-		link_boxes_to_lines (box_idx,global.vLine[? key])
+		link_boxes_to_lines (box_idx,global.hLine[? key])
 		//
-		key = j*global.n + i+ global.n
+		key = i*global.m + j+ global.m
 		box_idx.line_down = global.hLine[? key]
-		link_boxes_to_lines (box_idx,global.vLine[? key])
+		link_boxes_to_lines (box_idx,global.hLine[? key])
 		//update them in oLine and oBox 
 		//update oLine.affiliated_box(a list)
 		//update oBox.line_left,oBoxl.line_right,etc. 
