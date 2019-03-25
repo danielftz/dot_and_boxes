@@ -2,4 +2,4 @@ set = false;
 horizontal = true;
 idx = 0;
 image_alpha = 0.1;
-affiliated_box = [];
+affiliated_box = ds_list_create();

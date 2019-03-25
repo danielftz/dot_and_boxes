@@ -2,6 +2,6 @@
 // You can write your code in this editor
 if (!set){
 	global.played = true;
-	global.line_played = [horizontal,idx];
+	global.line_played = id;
 	set = true;
 }

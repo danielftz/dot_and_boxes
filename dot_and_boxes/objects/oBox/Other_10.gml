@@ -6,4 +6,5 @@ if (global.current_player == 0){
 else{
 	sprite_index = sBoxR;
 }
-visible = true;
+//visible = true;
+image_alpha = 1;

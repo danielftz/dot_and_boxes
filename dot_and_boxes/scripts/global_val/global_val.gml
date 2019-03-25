@@ -1,5 +1,5 @@
 global.m = 3; //number of dots horizontally
-global.n = 3; //number of dots vertically
+global.n = 4; //number of dots vertically
 global.current_player = 0;//blue go first
 global.played = false;
 global.vLine = ds_map_create();

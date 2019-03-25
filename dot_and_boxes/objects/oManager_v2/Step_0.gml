@@ -1,3 +1,18 @@
+if (global.played){
+	//if a line is played
+	var played_line = global.line_played;
+	for (i=0;i<ds_list_size(played_line.affiliated_box);i++){
+		var connected_box = played_line.affiliated_box[| i];
+		if (check_box(connected_box)){
+			with(connected_box) event_user(0);
+			
+		}
+	}
+	global.current_player = abs(1-global.current_player);
+	global.played = false;
+	
+}
+
 //if (global.played){
 //	//when a line is played:
 //	//check if line is horizontal or vertical

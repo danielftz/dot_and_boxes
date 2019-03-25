@@ -1,5 +1,6 @@
 set = false;
-visible = false;
+//visible = false;
+image_alpha = 0.1;
 box_x = 0;//box x in the grid
 box_y = 0;//box y in the grid
 line_left = 0;
