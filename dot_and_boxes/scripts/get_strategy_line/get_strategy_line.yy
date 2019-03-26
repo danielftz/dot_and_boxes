@@ -1,8 +1,8 @@
 {
-    "id": "e3e789cd-9f98-4ee0-9d4d-b478864b47a9",
+    "id": "9c575e90-c055-4338-80ab-d4b37275c5d4",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "random_play",
+    "name": "get_strategy_line",
     "IsCompatibility": false,
     "IsDnD": false
 }

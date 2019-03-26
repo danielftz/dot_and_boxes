@@ -10,3 +10,4 @@ global.Box = ds_grid_create(global.m, global.n)
 global.line_played = [];
 global.blue_score = 0;
 global.red_score = 0;
+global.validMoves = ds_list_create();
