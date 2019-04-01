@@ -1,5 +1,5 @@
 //size = ? set in child object
-global_val();
+//global_val();
 
 blue_score = 0;
 red_score = 0;
@@ -44,7 +44,7 @@ for (i=0;i<global.n+1;i++){
 //			global.vLine[? global.vIdx] = id;//add line to dictionary
 //			idx = global.vIdx;//set up the index starts at 0
 //			global.vIdx++;//update index
-//			horizontal = false;//set vertical
+//			horizontal = false;//set vertical	
 //			image_xscale = oManager_v2.v_gap/40;//resize
 //			image_angle = 270;
 //		}
@@ -66,6 +66,8 @@ for (i=0;i<global.m+1;i++){
 	}
 }
 	
+ds_map_copy(global.empty_hLine,global.hLine);
+ds_map_copy(global.empty_vLine,global.vLine);
 
 //create boxes
 //be careful with indexing
@@ -94,7 +96,7 @@ for (i=0;i<global.n;i++){
 		key = i*global.m + j;
 		box_idx.line_up = global.hLine[? key]
 		link_boxes_to_lines (box_idx,global.hLine[? key])
-		//
+		//																																																			
 		key = i*global.m + j+ global.m
 		box_idx.line_down = global.hLine[? key]
 		link_boxes_to_lines (box_idx,global.hLine[? key])

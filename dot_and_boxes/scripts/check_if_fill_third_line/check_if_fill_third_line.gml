@@ -1,4 +1,5 @@
 var item = argument0;
+var i;
 for (i=0; i < ds_list_size(item.affiliated_box);i++){
 	var filledLines = 0;
 	var itemBox = ds_list_find_value( item.affiliated_box, i)
