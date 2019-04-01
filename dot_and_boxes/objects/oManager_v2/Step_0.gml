@@ -2,6 +2,13 @@ if (global.played){
 	//if a line is played
 	var player_scored = false;
 	var played_line = global.line_played;
+	if (played_line.horizontal == true){
+		ds_map_delete(global.empty_hLine,played_line.idx);
+	}
+	else{
+		ds_map_delete(global.empty_vLine,played_line.idx);
+	}
+	
 	for (i=0;i<ds_list_size(played_line.affiliated_box);i++){
 		var connected_box = played_line.affiliated_box[| i];
 		if (check_box(connected_box)){

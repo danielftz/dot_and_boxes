@@ -3,5 +3,6 @@
 if (!set){
 	global.played = true;
 	//global.line_played = id;
+	global.line_played = id;
 	set = true;
 }

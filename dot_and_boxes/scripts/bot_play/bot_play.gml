@@ -2,6 +2,13 @@ do{
 	var i;
 	var bot_line = get_strategy_line();
 	
+	if (bot_line.horizontal == true){
+		ds_map_delete(global.empty_hLine,bot_line.idx);
+	}
+	else{
+		ds_map_delete(global.empty_vLine,bot_line.idx);
+	}
+	
 	bot_line.image_alpha = 1;
 	if (global.current_player == 0){
 		bot_line.sprite_index = sLineB;
