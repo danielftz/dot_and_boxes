@@ -1,7 +1,7 @@
 var item = argument0;
-var filledLines = 0;
 for (i=0; i < ds_list_size(item.affiliated_box);i++){
-	var itemBox = item.affiliated_box[? i];
+	var filledLines = 0;
+	var itemBox = ds_list_find_value( item.affiliated_box, i)
 	var leftLine = itemBox.line_left;
 	var rightLine = itemBox.line_right;
 	var upLine = itemBox.line_up;
@@ -21,6 +21,5 @@ for (i=0; i < ds_list_size(item.affiliated_box);i++){
 	if(filledLines > 1){
 		return true;
 	}
-	filledLines =0;
 }
 return false;

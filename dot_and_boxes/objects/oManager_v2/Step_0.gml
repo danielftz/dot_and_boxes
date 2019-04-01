@@ -18,7 +18,7 @@ if (global.played){
 	
 	//random_play();
 	if !(player_scored){
-		random_play();
+		bot_play();
 	}
 }
 

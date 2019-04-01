@@ -458,7 +458,7 @@
             "Key": "e3e789cd-9f98-4ee0-9d4d-b478864b47a9",
             "Value": {
                 "id": "9bf7419c-7194-4f46-a6e3-e21126e2bc06",
-                "resourcePath": "scripts\\random_play\\random_play.yy",
+                "resourcePath": "scripts\\bot_play\\bot_play.yy",
                 "resourceType": "GMScript"
             }
         },

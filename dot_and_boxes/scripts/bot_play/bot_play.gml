@@ -1,6 +1,6 @@
 do{
 	var i;
-	var bot_line = get_random_line();
+	var bot_line = get_strategy_line();
 	
 	bot_line.image_alpha = 1;
 	if (global.current_player == 0){

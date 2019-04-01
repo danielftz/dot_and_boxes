@@ -1,14 +1,16 @@
-var validMoves = ds_list_create();
+var hValidMoves = ds_list_create();
+var vValidMoves = ds_list_create();
 for (i = 0; i< ds_list_size(global.hLine); i++){
-	item = global.hLine[? i]
-	if (!item.set){
-		ds_list_add(validMoves, item)
+	var item = global.hLine[? i]
+	if (item.set == false){
+		ds_list_add(hValidMoves, item)
 	}
 }
 for (i = 0; i< ds_list_size(global.vLine); i++){
 	item = global.vLine[? i]
-	if (!item.set){
-		ds_list_add(validMoves, item)
+	if (item.set ==false){
+		ds_list_add(vValidMoves, item)
 	}
 }
-return validMoves
+global.hValidMoves = hValidMoves
+global.vValidMoves = vValidMoves	
