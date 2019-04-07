@@ -14,4 +14,4 @@ global.blue_score = 0;
 global.red_score = 0;
 global.validMoves = ds_list_create();
 global.hValidMoves = 0;
-global.hValidMoves = 0;
+global.vValidMoves = 0;

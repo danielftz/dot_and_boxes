@@ -1,21 +1,26 @@
 //var validMoves = check_valid_moves();
 var validLine;
-//check_valid_moves();
-//var i;
-//for (i=0; i< ds_map_size(global.empty_hLine); i++){
+check_valid_moves();
+var i;
+if random(2) >= 1{
+	for (i=0; i< ds_list_size(global.hValidMoves); i++){
 	
-//	validLine = ds_map_find_value(global.empty_hLine,i);
-//	if (!check_if_fill_third_line(validLine)){
-//		return validLine;
-//	}
-//}
-//for (i=0; i< ds_list_size(global.empty_vLine); i++){
-//	validLine = ds_map_find_value(global.empty_vLine,i);
-//	if (!check_if_fill_third_line(validLine)){
-//		return validLine;
-//	}
-//}
+		validLine = ds_list_find_value(global.hValidMoves,i);
+		if (!check_if_fill_third_line(validLine)){
+			return validLine;
+		}
+	}
+}
+else{
+	for (i=0; i< ds_list_size(global.vValidMoves); i++){
+		validLine = ds_list_find_value(global.vValidMoves,i);
+		if (!check_if_fill_third_line(validLine)){
+			return validLine;
+		}
+	}
+}
 
+/*
 while (true){
 	var vh = irandom(1);
 	var search;
@@ -39,4 +44,5 @@ while (true){
 		if (!check_if_fill_third_line(validLine)) return validLine;
 	}
 }
+*/
 return get_random_line();
