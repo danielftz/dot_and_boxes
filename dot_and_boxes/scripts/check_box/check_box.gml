@@ -16,3 +16,5 @@ if !(sc_line_idx.set){
 	return false;
 }
 return true;
+var box_index = ds_list_find_index(global.uncapturedBox,sc_box_idx)
+ds_list_delete(global.uncapturedBox,box_index)

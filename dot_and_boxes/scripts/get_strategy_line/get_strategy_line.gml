@@ -2,23 +2,29 @@
 var validLine;
 check_valid_moves();
 var i;
-if random(2) >= 1{
-	for (i=0; i< ds_list_size(global.hValidMoves); i++){
+var scoreLine = can_score();
+//if(phase1()){
+	if(scoreLine != false){
+		return scoreLine
+	}
+	if random(2) >= 1{
+		for (i=0; i< ds_list_size(global.hValidMoves); i++){
 	
-		validLine = ds_list_find_value(global.hValidMoves,i);
-		if (!check_if_fill_third_line(validLine)){
-			return validLine;
+			validLine = ds_list_find_value(global.hValidMoves,i);
+			if (!check_if_fill_third_line(validLine)){
+				return validLine;
+			}
 		}
 	}
-}
-else{
-	for (i=0; i< ds_list_size(global.vValidMoves); i++){
-		validLine = ds_list_find_value(global.vValidMoves,i);
-		if (!check_if_fill_third_line(validLine)){
-			return validLine;
+	else{
+		for (i=0; i< ds_list_size(global.vValidMoves); i++){
+			validLine = ds_list_find_value(global.vValidMoves,i);
+			if (!check_if_fill_third_line(validLine)){
+				return validLine;
+			}
 		}
 	}
-}
+//}
 
 /*
 while (true){
@@ -45,4 +51,5 @@ while (true){
 	}
 }
 */
+//play_phase2();
 return get_random_line();

@@ -83,6 +83,7 @@ for (i=0;i<global.n;i++){
 		box_idx.image_yscale = oManager_v2.v_gap/64;
 		//update grid
 		global.Box[# i,j] = box_idx;
+		ds_list_add(global.uncapturedBox,box_idx)
 		//******please fill in here*******//
 		//match vLine and hLine to each oBox
 		var key = j*global.n+i

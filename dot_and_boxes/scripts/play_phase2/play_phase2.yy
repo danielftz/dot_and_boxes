@@ -1,8 +1,8 @@
 {
-    "id": "2d487a91-12e7-4dbc-bf73-cdd03f3893d4",
+    "id": "bd2849c2-2c24-4d84-aabd-3625882b2cf7",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "check_box",
+    "name": "play_phase2",
     "IsCompatibility": false,
     "IsDnD": false
 }

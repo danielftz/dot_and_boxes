@@ -1,8 +1,8 @@
 {
-    "id": "2d487a91-12e7-4dbc-bf73-cdd03f3893d4",
+    "id": "de1253fb-870d-4580-8eb5-caef56c7da70",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "check_box",
+    "name": "create_chain",
     "IsCompatibility": false,
     "IsDnD": false
 }

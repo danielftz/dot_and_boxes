@@ -1,0 +1,1 @@
+global.chainList = find_chains()
